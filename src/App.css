@@ -1,0 +1,58 @@
+*{
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.Header{
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  gap:10px;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: repeat(3,100px);
+  position: relative;
+}
+
+.box{
+  border: 2px solid black;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  margin: 1px;
+  cursor: pointer;
+  height: 30px;
+
+}
+
+.box:hover{
+    background-color: beige;
+}
+
+.reset{
+  background-color: white;
+  border: 2px solid black;
+  padding: 5px 15px;
+  cursor: pointer;
+
+}
+
+
+
+.line{
+  position: absolute;
+  height: 3px;
+  width:0;
+  background-color: black;
+  transition: transform 0.3s ease-in-out;
+}
